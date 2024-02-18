@@ -16,7 +16,7 @@ const getAllProjects = asyncHandler(async (req, res) => {
         },
         {
             $sort: {
-                updateAt: -1,
+                updatedAt: -1,
             },
         },
     ]);
